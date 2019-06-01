@@ -1,5 +1,6 @@
 :root {
   --primary-color: #cc0000; 
+  --dark-color: #141414; 
 }
 
 * {
@@ -54,7 +55,7 @@ img {
   height: 100%;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
-  box-shadow: inset 120px 100px 250px #000000;
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
 .showcase-top {
@@ -105,8 +106,23 @@ height: 90px;
   font-size: 1.9rem;
   line-height: 1.25;
   margin: 0 0 2rem;
-
 }
+
+.tabs{
+ background: var(--dark-color);
+ padding-top: 1rem;
+ border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container{
+  display: grid;    
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .btn {
 
   display: inline-block;
