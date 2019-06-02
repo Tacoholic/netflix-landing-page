@@ -158,6 +158,13 @@ height: 90px;
 
 }
 
+#tab-2-content .tab-2-content-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   max-width: 70%;
   margin: auto;
